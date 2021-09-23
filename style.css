@@ -1,1 +1,6 @@
 /*This is the style sheet for the Codecademy Mixed messages project*/
+
+.tbox{
+    border: none;
+    width: fit-content;
+}

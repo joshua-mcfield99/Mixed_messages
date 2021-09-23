@@ -1,1 +1,5 @@
-console.log('helloworld')
+import{quotes, authors, dates} from "./object.js";
+
+
+
+
