@@ -4,3 +4,7 @@
     border: none;
     width: fit-content;
 }
+
+label{
+    font-family: Rubik, sans-serif;
+}
