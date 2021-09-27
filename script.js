@@ -1,4 +1,5 @@
 import{quotes, authors, dates} from "./object.js";
+
 const authorQuote = document.getElementById("author-quote");
 const authorName = document.getElementById("author-name");
 const authorDate = document.getElementById("author-date");
@@ -23,6 +24,11 @@ const selector = (arr) =>{
     
 }
 
+const quote = selector(quotes), date = selector(dates), authour = selector(authors);
+
+button.addEventListener("click") = function(){
+    authorQuote.innerHTML = quote;
+}
 console.log(selector(quotes));
 console.log(selector(dates));
 console.log(selector(authors));
