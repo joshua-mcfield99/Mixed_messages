@@ -1,5 +1,7 @@
 # Mixed_messages
 Mixed messages is a group project on Codecademy, This project has been created by Josh and Kubitisam.
+Please note: If you are using firefox and the button is not working please open in troubleshoot mode.
+If you dont know how to open firefox in troubleshoot mode follow this link: https://support.mozilla.org/en-US/kb/diagnose-firefox-issues-using-troubleshoot-mode?redirectslug=troubleshoot-firefox-issues-using-safe-mode&redirectlocale=en-US#w_how-to-start-firefox-in-4troubleshoot-modesf5safe-modesf
 
 ## Tech we have used
 In this project we have used:
