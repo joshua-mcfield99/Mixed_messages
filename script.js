@@ -1,6 +1,8 @@
 import{quotes, authors, dates} from "./object.js";
-
-
+const authorQuote = document.getElementById("author-quote");
+const authorName = document.getElementById("author-name");
+const authorDate = document.getElementById("author-date");
+const button = document.getElementById("btn");
 
 
 const selector = (arr) =>{
