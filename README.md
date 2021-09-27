@@ -14,4 +14,5 @@ To make it randomized the pairing of quote author and date will all be **randomi
 1. Author name
 2. Quote
 3. The Date the person lived
+
 These might match up correctly with the correct author/quote/date or it might be a different author for the quote and another authors life period/date they lived.
