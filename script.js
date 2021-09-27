@@ -41,7 +41,7 @@ const selector = (arr) =>{
 
 button.addEventListener("click", function(){
     const quote = selector(object.quotes), date = selector(object.dates), author = selector(object.authors);
-    authorQuote.innerHTML = quote;
+    authorQuote.innerHTML = "\"" + quote + "\"";
     authorDate.innerHTML = date;
     authorName.innerHTML = author;
 });
