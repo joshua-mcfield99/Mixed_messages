@@ -11,11 +11,16 @@ const object = {
  
      "dates":  [
      "1879-1955", "1881-1973", "1901-1966", "1883-1971", "1835-1910", "1976-2011", "1940-1980", "350AD-415AD", "399BCE-469BCE", "1899-1961", "1832-1898", "1999-Current", "2000-Current", "1643-1727", "1847-1910", "1847-1931", "1971-Current", "1900-1944", "1874-1965", "1925-2013", "1850-1894", "1898-1970", "551BCE-479BCE"
-     ]
+     ],
+    
+    "links": [
+        "https://en.wikipedia.org/wiki/Albert_Einstein", "https://en.wikipedia.org/wiki/Pablo_Picasso", "https://en.wikipedia.org/wiki/Walt_Disney", "https://en.wikipedia.org/wiki/Coco_Chanel", "https://en.wikipedia.org/wiki/Mark_Twain", "https://en.wikipedia.org/wiki/Steve_Jobs", "https://en.wikipedia.org/wiki/John_Lennon", "https://en.wikipedia.org/wiki/Hypatia", "https://en.wikipedia.org/wiki/Socrates", "https://en.wikipedia.org/wiki/Ernest_Hemingway", "https://en.wikipedia.org/wiki/Lewis_Carroll", "https://github.com/joshua-mcfield99", "https://github.com/Kubiti", "https://en.wikipedia.org/wiki/Isaac_Newton", "https://en.wikipedia.org/wiki/Leo_Tolstoy", "https://en.wikipedia.org/wiki/Thomas_Edison", "https://en.wikipedia.org/wiki/Elon_Musk", "https://en.wikipedia.org/wiki/Antoine_de_Saint-Exupéry", "https://en.wikipedia.org/wiki/Winston_Churchill", "https://en.wikipedia.org/wiki/Margaret_Thatcher", "https://en.wikipedia.org/wiki/Robert_Louis_Stevenson", "https://en.wikipedia.org/wiki/Erich_Maria_Remarque", "https://en.wikipedia.org/wiki/Confucius"
+    ]
  };
 const authorQuote = document.getElementById("author-quote");
 const authorName = document.getElementById("author-name");
 const authorDate = document.getElementById("author-date");
+const authorLink = document.getElementById("author-link");
 const button = document.getElementById("btn");
 
 
@@ -31,6 +36,9 @@ const selector = (arr) =>{
     } else if (arr === object.dates){
         date = arr[index];
         return date;
+    } else if (arr === object.links){
+        link = arr[index];
+        return link;
     } else {
         return 'Try again';
     };
@@ -40,12 +48,13 @@ const selector = (arr) =>{
 
 
 button.addEventListener("click", function(){
-    const quote = selector(object.quotes), date = selector(object.dates), author = selector(object.authors);
+    const quote = selector(object.quotes), date = selector(object.dates), author = selector(object.authors), link = selector(object.links);
     authorQuote.innerHTML = "\"" + quote + "\"";
     authorDate.innerHTML = date;
     authorName.innerHTML = author;
+    authorLink.setAttribute("href", link);
 });
 
-console.log(selector(object.quotes));
-console.log(selector(object.dates));
-console.log(selector(object.authors));
+// console.log(selector(object.quotes));
+// console.log(selector(object.dates));
+// console.log(selector(object.authors));
